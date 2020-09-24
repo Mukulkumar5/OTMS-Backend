@@ -14,7 +14,7 @@ import com.capgemini.onlinetestmanagement.entity.Questions;
 import com.capgemini.onlinetestmanagement.entity.Test1;
 
 @Service
-public class Test1Service {
+public class Test1Service implements Test1Interface {
 	
 	@Autowired
 	EntityManager em;
@@ -57,6 +57,12 @@ public class Test1Service {
 			}
 		}
 		return filteredTest;
+	}
+
+	@Override
+	public Test1 viewquestions(Test1 test, Integer questionsId) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 		
 	}
